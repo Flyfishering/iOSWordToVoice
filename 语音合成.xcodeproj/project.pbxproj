@@ -15,6 +15,9 @@
 		043EB8001D750EBD00B2260F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043EB7FE1D750EBD00B2260F /* LaunchScreen.storyboard */; };
 		043EB80B1D750EBD00B2260F /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043EB80A1D750EBD00B2260F /* ____Tests.m */; };
 		043EB8161D750EBD00B2260F /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 043EB8151D750EBD00B2260F /* ____UITests.m */; };
+		043EB8251D75139900B2260F /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043EB8241D75139900B2260F /* BaseTableViewController.m */; };
+		043EB8291D7515F500B2260F /* SystemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043EB8281D7515F500B2260F /* SystemTableViewController.m */; };
+		043EB82C1D751B4000B2260F /* SystemExampleOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043EB82B1D751B4000B2260F /* SystemExampleOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		043EB8111D750EBD00B2260F /* 语音合成UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "语音合成UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		043EB8151D750EBD00B2260F /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		043EB8171D750EBD00B2260F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043EB8231D75139900B2260F /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		043EB8241D75139900B2260F /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		043EB8271D7515F500B2260F /* SystemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTableViewController.h; sourceTree = "<group>"; };
+		043EB8281D7515F500B2260F /* SystemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemTableViewController.m; sourceTree = "<group>"; };
+		043EB82A1D751B4000B2260F /* SystemExampleOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemExampleOneViewController.h; sourceTree = "<group>"; };
+		043EB82B1D751B4000B2260F /* SystemExampleOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemExampleOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				043EB7F41D750EBD00B2260F /* AppDelegate.m */,
 				043EB7F61D750EBD00B2260F /* ViewController.h */,
 				043EB7F71D750EBD00B2260F /* ViewController.m */,
+				043EB8231D75139900B2260F /* BaseTableViewController.h */,
+				043EB8241D75139900B2260F /* BaseTableViewController.m */,
+				043EB8261D7515C100B2260F /* SystemVoice */,
 				043EB7F91D750EBD00B2260F /* Main.storyboard */,
 				043EB7FC1D750EBD00B2260F /* Assets.xcassets */,
 				043EB7FE1D750EBD00B2260F /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				043EB8171D750EBD00B2260F /* Info.plist */,
 			);
 			path = "语音合成UITests";
+			sourceTree = "<group>";
+		};
+		043EB8261D7515C100B2260F /* SystemVoice */ = {
+			isa = PBXGroup;
+			children = (
+				043EB8271D7515F500B2260F /* SystemTableViewController.h */,
+				043EB8281D7515F500B2260F /* SystemTableViewController.m */,
+				043EB82A1D751B4000B2260F /* SystemExampleOneViewController.h */,
+				043EB82B1D751B4000B2260F /* SystemExampleOneViewController.m */,
+			);
+			path = SystemVoice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					043EB7EC1D750EBC00B2260F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2N3LY2CR7S;
 					};
 					043EB8051D750EBD00B2260F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -272,6 +296,9 @@
 			files = (
 				043EB7F81D750EBD00B2260F /* ViewController.m in Sources */,
 				043EB7F51D750EBD00B2260F /* AppDelegate.m in Sources */,
+				043EB8251D75139900B2260F /* BaseTableViewController.m in Sources */,
+				043EB8291D7515F500B2260F /* SystemTableViewController.m in Sources */,
+				043EB82C1D751B4000B2260F /* SystemExampleOneViewController.m in Sources */,
 				043EB7F21D750EBD00B2260F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "语音合成/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangbinbin.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "语音合成/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wangbinbin.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
